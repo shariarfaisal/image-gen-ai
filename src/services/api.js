@@ -1,5 +1,5 @@
 export async function getTemplates() {
-  const res = await fetch('/prompts.json');
+  const res = await fetch(`${import.meta.env.BASE_URL}prompts.json`);
   return res.json();
 }
 
